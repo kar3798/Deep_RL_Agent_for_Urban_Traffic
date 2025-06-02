@@ -1,0 +1,5 @@
+stable-baselines3==2.6.0
+gym==0.21.0
+setuptools<65
+numpy
+traci

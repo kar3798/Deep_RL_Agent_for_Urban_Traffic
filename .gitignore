@@ -3,7 +3,6 @@ __pycache__/
 *.py[cod]
 *.egg-info/
 .venv/
-requirements.txt
 
 # IDE
 .idea/
