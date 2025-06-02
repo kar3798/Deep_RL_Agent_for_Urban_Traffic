@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<edges>
+  <!-- North-South approaches (single lane) -->
+  <edge id="e_north" from="n_north" to="n_center" numLanes="1" speed="13.89"/>
+  <edge id="e_south" from="n_south" to="n_center" numLanes="1" speed="13.89"/>
+  <edge id="e_center_north" from="n_center" to="n_north" numLanes="1" speed="13.89"/>
+  <edge id="e_center_south" from="n_center" to="n_south" numLanes="1" speed="13.89"/>
+  
+  <!-- East-West approaches (Market Street - TWO LANES) -->
+  <edge id="e_east" from="n_east" to="n_center" numLanes="2" speed="13.89" name="Market Street East"/>
+  <edge id="e_west" from="n_west" to="n_center" numLanes="2" speed="13.89" name="Market Street West"/>
+  <edge id="e_center_east" from="n_center" to="n_east" numLanes="2" speed="13.89" name="Market Street East"/>
+  <edge id="e_center_west" from="n_center" to="n_west" numLanes="2" speed="13.89" name="Market Street West"/>
+</edges>

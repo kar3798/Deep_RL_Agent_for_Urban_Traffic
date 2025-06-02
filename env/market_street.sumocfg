@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-05-29 02:14:20 by Eclipse SUMO sumo Version 1.23.1
+-->
+
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="market_street_with_tls.net.xml"/>
+        <route-files value="routes.rou.xml"/>
+        <!-- <additional-files value="tlLogic.add.xml"/> -->
+    </input>
+
+    <time>
+        <begin value="0"/>
+        <end value="2000"/>
+        <step-length value="0.1"/>
+    </time>
+
+    <report>
+        <verbose value="true"/>
+        <no-step-log value="true"/>
+    </report>
+
+</sumoConfiguration>

@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+requirements.txt
+
+# IDE
+.idea/
+
+## SUMO outputs
+#*.net.xml
+#*.rou.xml
+#*.sumocfg
+
+# Logs and checkpoints
+logs/
+ppo_traffic_light.zip
+
+# OS
+.DS_Store
+Thumbs.db

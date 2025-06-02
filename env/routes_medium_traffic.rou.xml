@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<routes>
+  <vType id="car" accel="1.5" decel="4.5" sigma="0.3" length="5" minGap="2.5" maxSpeed="13.89" guiShape="passenger" />
+  <vType id="bus" accel="1.0" decel="4.0" sigma="0.2" length="15" minGap="3.0" maxSpeed="11.00" guiShape="bus" />
+  <vType id="truck" accel="0.8" decel="4.0" sigma="0.2" length="12" minGap="3.5" maxSpeed="9.50" guiShape="truck" />
+  <route id="north_south" edges="e_north e_center_south" />
+  <route id="north_east" edges="e_north e_center_east" />
+  <route id="north_west" edges="e_north e_center_west" />
+  <route id="north_north" edges="e_north e_center_north" />
+  <route id="south_north" edges="e_south e_center_north" />
+  <route id="south_west" edges="e_south e_center_west" />
+  <route id="south_east" edges="e_south e_center_east" />
+  <route id="south_south" edges="e_south e_center_south" />
+  <route id="east_west" edges="e_east e_center_west" />
+  <route id="east_south" edges="e_east e_center_south" />
+  <route id="east_north" edges="e_east e_center_north" />
+  <route id="east_east" edges="e_east e_center_east" />
+  <route id="west_east" edges="e_west e_center_east" />
+  <route id="west_north" edges="e_west e_center_north" />
+  <route id="west_south" edges="e_west e_center_south" />
+  <route id="west_west" edges="e_west e_center_west" />
+  <vehicle id="truck_1" type="truck" route="west_north" depart="4.30" departLane="1" />
+  <vehicle id="car_2" type="car" route="north_south" depart="8.80" />
+  <vehicle id="car_3" type="car" route="east_west" depart="10.62" departLane="0" />
+  <vehicle id="car_4" type="car" route="north_south" depart="13.22" />
+  <vehicle id="car_5" type="car" route="north_west" depart="17.18" />
+  <vehicle id="car_6" type="car" route="north_south" depart="19.67" />
+  <vehicle id="car_7" type="car" route="east_west" depart="27.28" departLane="1" />
+  <vehicle id="car_8" type="car" route="north_east" depart="71.52" />
+  <vehicle id="car_9" type="car" route="south_north" depart="72.70" />
+  <vehicle id="car_10" type="car" route="west_east" depart="77.19" departLane="1" />
+  <vehicle id="car_11" type="car" route="west_east" depart="79.15" departLane="1" />
+  <vehicle id="car_12" type="car" route="north_north" depart="84.24" />
+  <vehicle id="car_13" type="car" route="north_south" depart="97.78" />
+  <vehicle id="car_14" type="car" route="east_west" depart="99.51" departLane="1" />
+  <vehicle id="car_15" type="car" route="west_east" depart="116.23" departLane="0" />
+  <vehicle id="car_16" type="car" route="east_south" depart="117.87" departLane="1" />
+  <vehicle id="bus_17" type="bus" route="west_east" depart="120.35" departLane="0" />
+  <vehicle id="car_18" type="car" route="south_north" depart="123.18" />
+  <vehicle id="car_19" type="car" route="west_east" depart="125.04" departLane="1" />
+  <vehicle id="truck_20" type="truck" route="south_west" depart="134.93" />
+  <vehicle id="truck_21" type="truck" route="south_west" depart="143.15" />
+  <vehicle id="car_22" type="car" route="west_east" depart="144.38" departLane="1" />
+  <vehicle id="car_23" type="car" route="west_east" depart="150.09" departLane="0" />
+  <vehicle id="car_24" type="car" route="north_south" depart="151.28" />
+  <vehicle id="car_25" type="car" route="east_west" depart="152.01" departLane="1" />
+  <vehicle id="car_26" type="car" route="east_west" depart="160.27" departLane="1" />
+  <vehicle id="car_27" type="car" route="south_north" depart="172.95" />
+  <vehicle id="car_28" type="car" route="north_east" depart="181.79" />
+  <vehicle id="car_29" type="car" route="west_east" depart="192.12" departLane="0" />
+  <vehicle id="car_30" type="car" route="west_south" depart="192.43" departLane="1" />
+  <vehicle id="car_31" type="car" route="west_east" depart="192.63" departLane="0" />
+  <vehicle id="car_32" type="car" route="east_west" depart="209.92" departLane="0" />
+  <vehicle id="car_33" type="car" route="south_west" depart="210.16" />
+  <vehicle id="car_34" type="car" route="north_west" depart="231.17" />
+  <vehicle id="car_35" type="car" route="east_west" depart="238.18" departLane="0" />
+  <vehicle id="bus_36" type="bus" route="north_east" depart="239.53" />
+  <vehicle id="car_37" type="car" route="east_south" depart="243.31" departLane="1" />
+  <vehicle id="car_38" type="car" route="north_west" depart="273.72" />
+  <vehicle id="car_39" type="car" route="west_east" depart="277.32" departLane="1" />
+  <vehicle id="car_40" type="car" route="west_east" depart="297.69" departLane="0" />
+  <vehicle id="car_41" type="car" route="east_west" depart="322.18" departLane="0" />
+  <vehicle id="car_42" type="car" route="east_north" depart="333.41" departLane="0" />
+  <vehicle id="car_43" type="car" route="west_east" depart="339.09" departLane="0" />
+  <vehicle id="truck_44" type="truck" route="north_south" depart="361.14" />
+  <vehicle id="car_45" type="car" route="south_east" depart="362.86" />
+  <vehicle id="truck_46" type="truck" route="east_west" depart="384.26" departLane="0" />
+  <vehicle id="car_47" type="car" route="south_west" depart="407.66" />
+  <vehicle id="car_48" type="car" route="north_south" depart="416.20" />
+  <vehicle id="car_49" type="car" route="east_west" depart="417.25" departLane="1" />
+  <vehicle id="car_50" type="car" route="north_south" depart="419.33" />
+  <vehicle id="car_51" type="car" route="north_south" depart="434.27" />
+  <vehicle id="car_52" type="car" route="south_east" depart="440.31" />
+  <vehicle id="car_53" type="car" route="north_south" depart="441.36" />
+  <vehicle id="car_54" type="car" route="north_south" depart="455.01" />
+  <vehicle id="car_55" type="car" route="south_north" depart="475.65" />
+  <vehicle id="car_56" type="car" route="west_north" depart="479.39" departLane="0" />
+  <vehicle id="car_57" type="car" route="north_north" depart="479.78" />
+  <vehicle id="car_58" type="car" route="west_north" depart="498.83" departLane="1" />
+  <vehicle id="car_59" type="car" route="west_north" depart="502.79" departLane="0" />
+  <vehicle id="car_60" type="car" route="north_south" depart="504.88" />
+  <vehicle id="car_61" type="car" route="west_east" depart="509.71" departLane="0" />
+  <vehicle id="car_62" type="car" route="east_west" depart="514.50" departLane="0" />
+  <vehicle id="car_63" type="car" route="south_north" depart="516.95" />
+  <vehicle id="car_64" type="car" route="east_west" depart="530.18" departLane="0" />
+  <vehicle id="car_65" type="car" route="west_east" depart="535.33" departLane="0" />
+  <vehicle id="car_66" type="car" route="west_east" depart="539.06" departLane="1" />
+  <vehicle id="car_67" type="car" route="east_west" depart="558.15" departLane="0" />
+  <vehicle id="car_68" type="car" route="north_east" depart="583.50" />
+  <vehicle id="car_69" type="car" route="east_west" depart="585.70" departLane="0" />
+  <vehicle id="car_70" type="car" route="east_south" depart="599.19" departLane="0" />
+  <vehicle id="car_71" type="car" route="east_west" depart="599.81" departLane="1" />
+  <vehicle id="car_72" type="car" route="south_north" depart="612.85" />
+  <vehicle id="car_73" type="car" route="east_west" depart="617.00" departLane="1" />
+  <vehicle id="car_74" type="car" route="east_west" depart="619.89" departLane="1" />
+  <vehicle id="car_75" type="car" route="west_east" depart="624.21" departLane="1" />
+  <vehicle id="car_76" type="car" route="south_north" depart="625.84" />
+  <vehicle id="car_77" type="car" route="north_south" depart="629.98" />
+  <vehicle id="car_78" type="car" route="south_north" depart="637.24" />
+  <vehicle id="car_79" type="car" route="east_north" depart="640.02" departLane="0" />
+  <vehicle id="car_80" type="car" route="north_south" depart="642.92" />
+  <vehicle id="car_81" type="car" route="west_east" depart="652.80" departLane="0" />
+  <vehicle id="car_82" type="car" route="east_east" depart="652.94" departLane="1" />
+  <vehicle id="car_83" type="car" route="south_west" depart="674.89" />
+  <vehicle id="car_84" type="car" route="north_south" depart="687.94" />
+  <vehicle id="car_85" type="car" route="north_south" depart="688.57" />
+  <vehicle id="car_86" type="car" route="north_south" depart="688.80" />
+  <vehicle id="car_87" type="car" route="south_north" depart="702.83" />
+  <vehicle id="car_88" type="car" route="south_west" depart="742.36" />
+  <vehicle id="car_89" type="car" route="east_west" depart="760.05" departLane="0" />
+  <vehicle id="car_90" type="car" route="north_east" depart="769.63" />
+  <vehicle id="car_91" type="car" route="north_west" depart="790.31" />
+  <vehicle id="car_92" type="car" route="south_east" depart="809.61" />
+  <vehicle id="car_93" type="car" route="east_west" depart="810.39" departLane="1" />
+  <vehicle id="car_94" type="car" route="east_south" depart="841.58" departLane="0" />
+  <vehicle id="car_95" type="car" route="west_east" depart="847.11" departLane="0" />
+  <vehicle id="car_96" type="car" route="east_south" depart="850.40" departLane="1" />
+  <vehicle id="car_97" type="car" route="east_west" depart="863.83" departLane="1" />
+  <vehicle id="car_98" type="car" route="south_west" depart="871.07" />
+  <vehicle id="car_99" type="car" route="north_west" depart="873.32" />
+  <vehicle id="car_100" type="car" route="west_east" depart="877.42" departLane="0" />
+  <vehicle id="car_101" type="car" route="south_north" depart="896.64" />
+  <vehicle id="car_102" type="car" route="south_east" depart="898.37" />
+  <vehicle id="truck_103" type="truck" route="west_east" depart="901.54" departLane="1" />
+  <vehicle id="car_104" type="car" route="south_east" depart="929.26" />
+  <vehicle id="bus_105" type="bus" route="west_east" depart="937.18" departLane="0" />
+  <vehicle id="car_106" type="car" route="north_south" depart="937.92" />
+  <vehicle id="car_107" type="car" route="east_north" depart="946.72" departLane="0" />
+  <vehicle id="car_108" type="car" route="east_west" depart="956.39" departLane="0" />
+  <vehicle id="car_109" type="car" route="north_south" depart="962.94" />
+  <vehicle id="car_110" type="car" route="west_north" depart="982.23" departLane="0" />
+  <vehicle id="car_111" type="car" route="north_east" depart="1023.49" />
+  <vehicle id="car_112" type="car" route="east_west" depart="1028.96" departLane="0" />
+  <vehicle id="car_113" type="car" route="west_east" depart="1034.82" departLane="1" />
+  <vehicle id="car_114" type="car" route="east_north" depart="1039.35" departLane="1" />
+  <vehicle id="car_115" type="car" route="east_south" depart="1047.09" departLane="1" />
+  <vehicle id="car_116" type="car" route="north_east" depart="1049.84" />
+  <vehicle id="car_117" type="car" route="west_north" depart="1070.28" departLane="0" />
+  <vehicle id="car_118" type="car" route="north_south" depart="1081.59" />
+  <vehicle id="car_119" type="car" route="east_west" depart="1090.35" departLane="1" />
+  <vehicle id="car_120" type="car" route="north_east" depart="1093.72" />
+  <vehicle id="car_121" type="car" route="east_west" depart="1098.85" departLane="1" />
+  <vehicle id="car_122" type="car" route="west_east" depart="1102.64" departLane="1" />
+  <vehicle id="car_123" type="car" route="north_south" depart="1168.37" />
+  <vehicle id="truck_124" type="truck" route="west_east" depart="1178.05" departLane="0" />
+  <vehicle id="car_125" type="car" route="west_east" depart="1197.08" departLane="1" />
+  <vehicle id="car_126" type="car" route="north_south" depart="1200.11" />
+  <vehicle id="car_127" type="car" route="north_south" depart="1205.21" />
+  <vehicle id="car_128" type="car" route="west_north" depart="1214.54" departLane="1" />
+  <vehicle id="car_129" type="car" route="north_east" depart="1216.67" />
+  <vehicle id="car_130" type="car" route="south_west" depart="1223.87" />
+  <vehicle id="car_131" type="car" route="west_east" depart="1224.78" departLane="1" />
+  <vehicle id="truck_132" type="truck" route="south_east" depart="1228.04" />
+  <vehicle id="car_133" type="car" route="south_east" depart="1242.98" />
+  <vehicle id="car_134" type="car" route="north_west" depart="1257.83" />
+  <vehicle id="car_135" type="car" route="east_south" depart="1276.64" departLane="0" />
+  <vehicle id="car_136" type="car" route="east_south" depart="1283.68" departLane="1" />
+  <vehicle id="car_137" type="car" route="north_west" depart="1293.28" />
+  <vehicle id="car_138" type="car" route="east_west" depart="1298.72" departLane="0" />
+  <vehicle id="truck_139" type="truck" route="west_east" depart="1299.73" departLane="1" />
+  <vehicle id="bus_140" type="bus" route="north_south" depart="1303.03" />
+  <vehicle id="car_141" type="car" route="south_east" depart="1318.10" />
+  <vehicle id="car_142" type="car" route="south_north" depart="1331.07" />
+  <vehicle id="car_143" type="car" route="north_south" depart="1331.27" />
+  <vehicle id="car_144" type="car" route="south_north" depart="1332.50" />
+  <vehicle id="car_145" type="car" route="south_east" depart="1343.00" />
+  <vehicle id="car_146" type="car" route="south_west" depart="1359.24" />
+  <vehicle id="car_147" type="car" route="north_south" depart="1361.27" />
+  <vehicle id="car_148" type="car" route="west_east" depart="1374.90" departLane="0" />
+  <vehicle id="car_149" type="car" route="east_west" depart="1431.74" departLane="0" />
+  <vehicle id="car_150" type="car" route="west_north" depart="1432.78" departLane="1" />
+  <vehicle id="car_151" type="car" route="west_east" depart="1438.55" departLane="1" />
+  <vehicle id="car_152" type="car" route="west_east" depart="1440.20" departLane="0" />
+  <vehicle id="car_153" type="car" route="east_north" depart="1443.34" departLane="0" />
+  <vehicle id="car_154" type="car" route="south_north" depart="1458.58" />
+  <vehicle id="car_155" type="car" route="south_north" depart="1460.61" />
+  <vehicle id="car_156" type="car" route="north_south" depart="1465.97" />
+  <vehicle id="car_157" type="car" route="south_north" depart="1481.04" />
+  <vehicle id="truck_158" type="truck" route="north_west" depart="1485.96" />
+  <vehicle id="car_159" type="car" route="west_south" depart="1490.58" departLane="1" />
+  <vehicle id="car_160" type="car" route="west_east" depart="1497.44" departLane="1" />
+  <vehicle id="car_161" type="car" route="south_south" depart="1498.36" />
+  <vehicle id="car_162" type="car" route="east_west" depart="1501.02" departLane="1" />
+  <vehicle id="car_163" type="car" route="north_west" depart="1550.16" />
+  <vehicle id="car_164" type="car" route="west_east" depart="1554.72" departLane="0" />
+  <vehicle id="truck_165" type="truck" route="west_east" depart="1557.23" departLane="1" />
+  <vehicle id="car_166" type="car" route="west_north" depart="1558.27" departLane="0" />
+  <vehicle id="car_167" type="car" route="south_east" depart="1559.19" />
+  <vehicle id="car_168" type="car" route="east_west" depart="1571.27" departLane="1" />
+  <vehicle id="car_169" type="car" route="east_west" depart="1571.30" departLane="0" />
+  <vehicle id="car_170" type="car" route="east_south" depart="1574.81" departLane="0" />
+  <vehicle id="car_171" type="car" route="north_south" depart="1578.25" />
+  <vehicle id="car_172" type="car" route="north_north" depart="1602.65" />
+  <vehicle id="bus_173" type="bus" route="north_south" depart="1611.28" />
+  <vehicle id="car_174" type="car" route="west_east" depart="1634.29" departLane="0" />
+  <vehicle id="truck_175" type="truck" route="south_east" depart="1637.64" />
+  <vehicle id="bus_176" type="bus" route="west_east" depart="1644.91" departLane="1" />
+  <vehicle id="car_177" type="car" route="east_south" depart="1651.24" departLane="1" />
+  <vehicle id="car_178" type="car" route="north_south" depart="1653.43" />
+  <vehicle id="car_179" type="car" route="south_west" depart="1679.18" />
+  <vehicle id="truck_180" type="truck" route="west_north" depart="1701.25" departLane="0" />
+  <vehicle id="car_181" type="car" route="west_east" depart="1705.56" departLane="1" />
+  <vehicle id="car_182" type="car" route="west_east" depart="1711.07" departLane="1" />
+  <vehicle id="car_183" type="car" route="north_south" depart="1724.64" />
+  <vehicle id="car_184" type="car" route="west_east" depart="1726.38" departLane="0" />
+  <vehicle id="car_185" type="car" route="south_west" depart="1728.37" />
+  <vehicle id="car_186" type="car" route="south_north" depart="1731.15" />
+  <vehicle id="car_187" type="car" route="east_west" depart="1735.40" departLane="1" />
+  <vehicle id="truck_188" type="truck" route="west_east" depart="1760.15" departLane="0" />
+  <vehicle id="car_189" type="car" route="north_west" depart="1760.35" />
+  <vehicle id="car_190" type="car" route="north_south" depart="1790.41" />
+  <vehicle id="car_191" type="car" route="east_north" depart="1803.11" departLane="0" />
+  <vehicle id="car_192" type="car" route="south_east" depart="1805.92" />
+  <vehicle id="truck_193" type="truck" route="east_west" depart="1807.68" departLane="0" />
+  <vehicle id="car_194" type="car" route="south_east" depart="1818.82" />
+  <vehicle id="car_195" type="car" route="east_south" depart="1821.33" departLane="0" />
+  <vehicle id="car_196" type="car" route="south_west" depart="1823.11" />
+  <vehicle id="car_197" type="car" route="south_west" depart="1829.41" />
+  <vehicle id="car_198" type="car" route="south_north" depart="1834.70" />
+  <vehicle id="car_199" type="car" route="east_east" depart="1849.18" departLane="1" />
+  <vehicle id="car_200" type="car" route="west_east" depart="1850.40" departLane="1" />
+  <vehicle id="truck_201" type="truck" route="west_east" depart="1852.61" departLane="0" />
+  <vehicle id="car_202" type="car" route="west_east" depart="1886.93" departLane="0" />
+  <vehicle id="bus_203" type="bus" route="south_north" depart="1903.02" />
+  <vehicle id="car_204" type="car" route="west_north" depart="1908.42" departLane="1" />
+  <vehicle id="car_205" type="car" route="north_east" depart="1914.37" />
+  <vehicle id="car_206" type="car" route="east_west" depart="1922.92" departLane="0" />
+  <vehicle id="bus_207" type="bus" route="south_north" depart="1928.20" />
+  <vehicle id="car_208" type="car" route="west_east" depart="1943.53" departLane="0" />
+  <vehicle id="car_209" type="car" route="west_east" depart="1949.20" departLane="1" />
+  <vehicle id="car_210" type="car" route="south_west" depart="1953.80" />
+  <vehicle id="car_211" type="car" route="west_north" depart="1969.01" departLane="0" />
+  <vehicle id="car_212" type="car" route="west_south" depart="1973.09" departLane="1" />
+  <vehicle id="car_213" type="car" route="west_east" depart="1979.61" departLane="0" />
+  <vehicle id="car_214" type="car" route="west_east" depart="1980.94" departLane="1" />
+  <vehicle id="car_215" type="car" route="north_west" depart="1982.78" />
+  <vehicle id="car_216" type="car" route="south_east" depart="1991.86" />
+  <vehicle id="car_217" type="car" route="east_west" depart="1992.98" departLane="1" />
+  <vehicle id="car_218" type="car" route="east_north" depart="2001.81" departLane="0" />
+  <vehicle id="car_219" type="car" route="north_west" depart="2006.25" />
+  <vehicle id="car_220" type="car" route="east_south" depart="2008.40" departLane="1" />
+  <vehicle id="car_221" type="car" route="north_south" depart="2026.34" />
+  <vehicle id="car_222" type="car" route="south_north" depart="2036.95" />
+  <vehicle id="car_223" type="car" route="east_west" depart="2047.02" departLane="1" />
+  <vehicle id="car_224" type="car" route="west_east" depart="2067.88" departLane="1" />
+  <vehicle id="bus_225" type="bus" route="west_east" depart="2072.84" departLane="1" />
+  <vehicle id="car_226" type="car" route="south_east" depart="2081.07" />
+  <vehicle id="car_227" type="car" route="north_north" depart="2084.22" />
+  <vehicle id="car_228" type="car" route="south_west" depart="2088.16" />
+  <vehicle id="car_229" type="car" route="south_west" depart="2092.49" />
+  <vehicle id="car_230" type="car" route="north_east" depart="2093.37" />
+  <vehicle id="car_231" type="car" route="north_south" depart="2094.68" />
+  <vehicle id="car_232" type="car" route="south_west" depart="2102.78" />
+  <vehicle id="car_233" type="car" route="south_west" depart="2104.35" />
+  <vehicle id="car_234" type="car" route="south_north" depart="2117.25" />
+  <vehicle id="car_235" type="car" route="east_west" depart="2128.39" departLane="1" />
+  <vehicle id="car_236" type="car" route="east_south" depart="2139.65" departLane="1" />
+  <vehicle id="car_237" type="car" route="north_south" depart="2142.35" />
+  <vehicle id="car_238" type="car" route="north_south" depart="2154.53" />
+  <vehicle id="car_239" type="car" route="north_west" depart="2166.58" />
+  <vehicle id="car_240" type="car" route="east_south" depart="2174.98" departLane="0" />
+  <vehicle id="car_241" type="car" route="north_east" depart="2177.04" />
+  <vehicle id="car_242" type="car" route="north_west" depart="2179.99" />
+  <vehicle id="car_243" type="car" route="north_south" depart="2181.42" />
+  <vehicle id="car_244" type="car" route="west_east" depart="2184.31" departLane="1" />
+  <vehicle id="car_245" type="car" route="east_west" depart="2207.99" departLane="0" />
+  <vehicle id="car_246" type="car" route="south_west" depart="2209.79" />
+  <vehicle id="car_247" type="car" route="west_east" depart="2219.96" departLane="0" />
+  <vehicle id="car_248" type="car" route="south_north" depart="2225.34" />
+  <vehicle id="car_249" type="car" route="east_west" depart="2228.25" departLane="1" />
+  <vehicle id="car_250" type="car" route="east_south" depart="2255.33" departLane="1" />
+  <vehicle id="car_251" type="car" route="north_south" depart="2264.56" />
+  <vehicle id="car_252" type="car" route="south_east" depart="2266.44" />
+  <vehicle id="bus_253" type="bus" route="south_west" depart="2269.88" />
+  <vehicle id="bus_254" type="bus" route="north_north" depart="2300.29" />
+  <vehicle id="car_255" type="car" route="north_south" depart="2301.27" />
+  <vehicle id="car_256" type="car" route="west_east" depart="2307.60" departLane="0" />
+  <vehicle id="truck_257" type="truck" route="east_west" depart="2310.67" departLane="0" />
+  <vehicle id="car_258" type="car" route="north_east" depart="2320.89" />
+  <vehicle id="car_259" type="car" route="west_west" depart="2326.99" departLane="0" />
+  <vehicle id="car_260" type="car" route="east_east" depart="2329.39" departLane="1" />
+  <vehicle id="car_261" type="car" route="south_north" depart="2343.77" />
+  <vehicle id="car_262" type="car" route="north_east" depart="2346.47" />
+  <vehicle id="car_263" type="car" route="south_north" depart="2361.99" />
+  <vehicle id="car_264" type="car" route="south_north" depart="2386.04" />
+  <vehicle id="car_265" type="car" route="south_north" depart="2396.45" />
+  <vehicle id="car_266" type="car" route="east_west" depart="2400.00" departLane="0" />
+</routes>

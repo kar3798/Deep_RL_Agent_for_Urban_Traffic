@@ -1,0 +1,14 @@
+
+
+<additional>
+<tlLogic id="n_center" type="static" programID="default" offset="0">
+<phase duration="30" state="GGGGrrrrGGGGrrrr"/>
+<!--  NS Green  -->
+<phase duration="5" state="yyyyrrrryyyyrrrr"/>
+<!--  NS Yellow  -->
+<phase duration="30" state="rrrrGGGgrrrrGGGg"/>
+<!--  EW Green  -->
+<phase duration="5" state="rrrryyyyrtlLogic.add.xmlrrryyyy"/>
+<!--  EW Yellow  -->
+</tlLogic>
+</additional>
