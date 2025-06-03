@@ -33,7 +33,6 @@ SCENARIO_COLORS = {
 }
 
 
-# Finds available RL model files for phases 1-4
 def find_available_models():
     models = {}
     for phase in range(1, 5):
@@ -43,18 +42,16 @@ def find_available_models():
     return models
 
 
-# Counts the number of vehicles in a scenario
-def count_vehicles_in_routefile(routefile_path):
+def count_vehicles_in_route_file(route_file_path):
     try:
-        tree = ET.parse(routefile_path)
+        tree = ET.parse(route_file_path)
         root = tree.getroot()
         return sum(1 for v in root.iter('vehicle'))
     except Exception as e:
-        print(f"Error counting vehicles in {routefile_path}: {e}")
+        print(f"Error counting vehicles in {route_file_path}: {e}")
         return None
 
 
-# Runs model and collects metrics
 def run_model(model_path, env_config, max_steps=3000):
     """Evaluate a trained RL model on the given environment config."""
     env = VisualizationEnvironment(config_path=env_config, max_steps=max_steps, gui=False, step_delay=0)
@@ -149,7 +146,7 @@ def analyze_scenario(scenario_key, max_steps=3000):
     print(f"\nScenario: {scenario['label']}")
     models = find_available_models()
     results = {}
-    no_of_vehicles = count_vehicles_in_routefile(scenario["route file"])
+    no_of_vehicles = count_vehicles_in_route_file(scenario["route file"])
     for model_name in MODEL_ORDER:
         if model_name == "Philadelphia Baseline":
             print(f"Evaluating: {model_name}")
@@ -183,7 +180,6 @@ def analyze_scenario(scenario_key, max_steps=3000):
     return df
 
 
-# Generates and saves comparative plots
 def plot_results(dfs, scenario_keys):
     os.makedirs("results", exist_ok=True)
     metrics = ['reward', 'steps', 'total_waiting_time']
