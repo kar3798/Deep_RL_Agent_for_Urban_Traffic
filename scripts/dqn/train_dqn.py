@@ -1,4 +1,4 @@
-# Transfer Learning implementation for Traffic Signal Control
+# Curriculum Learning implementation for Traffic Signal Control
 # Goes from simple traffic to complex turning movements
 
 import numpy as np

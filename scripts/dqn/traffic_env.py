@@ -56,7 +56,6 @@ class TrafficSignalEnv(gym.Env):
         obs = self._get_observation()
         return obs, {}
 
-    # Execute one environment step
     def step(self, action):
         action = int(action) if hasattr(action, 'item') else int(action)
         action_info = self.action_mapping[action]
@@ -96,7 +95,6 @@ class TrafficSignalEnv(gym.Env):
             'direction': direction
         }
 
-    # Get current traffic state observation
     def _get_observation(self):
         lane_counts = self._get_lane_vehicle_counts()
         return np.array(lane_counts, dtype=np.float32)
@@ -129,7 +127,6 @@ class TrafficSignalEnv(gym.Env):
             except:
                 return [0, 0, 0, 0, 0, 0]
 
-    # Calculate reward based on traffic performance metrics
     def _calculate_reward(self, action):
         try:
             # Waiting time penalty
@@ -174,7 +171,6 @@ class TrafficSignalEnv(gym.Env):
         dir2 = self.action_mapping[action2]["direction"]
         return dir1 != dir2
 
-    # Closes the SUMO simulation
     def close(self):
         if traci.isLoaded():
             traci.close()
